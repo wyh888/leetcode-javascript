@@ -1,0 +1,31 @@
+{
+  "name": "leetcode-javascript",
+  "version": "1.0.0",
+  "description": "使用 javascript 解答 leetcode 上的算法题",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyh888/leetcode-javascript.git"
+  },
+  "keywords": [
+    "leetcode-javascript"
+  ],
+  "author": "wangyh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyh888/leetcode-javascript/issues"
+  },
+  "homepage": "https://github.com/wyh888/leetcode-javascript#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.8.0",
+    "regenerator-runtime": "^0.13.2"
+  }
+}
