@@ -9,4 +9,5 @@
 
 ## 运行
 - `npm install` 安装依赖
-- `npm test` 运行单元测试
+- `npm test` 运行 `test` 文件夹下所有单元测试
+- `npx jest ./test/文件` 运行某一个单独的测试用例，如 `npx jest ./test/1.test.js`
