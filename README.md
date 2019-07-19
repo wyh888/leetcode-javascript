@@ -1,6 +1,6 @@
 # leetcode-javascript
 
-本仓库主要是个人使用 javascript 对 leetcode 上一些题目的解法
+个人使用 javascript 对 leetcode 上一些题目的解法
 
 ## 目录说明
 
