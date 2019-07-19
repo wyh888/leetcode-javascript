@@ -8,22 +8,35 @@
  * @param {number} n
  * @return {boolean}
  */
+// var canPlaceFlowers = function(flowerbed, n) {
+//   let count = 0
+//   for (let i = 0; i < flowerbed.length; i++) {
+//     if (flowerbed[i] === 0) {
+//       if (!flowerbed[i - 1] && !flowerbed[i + 1]) {
+//         flowerbed[i] = 1
+//         count++
+//       }
+//     }
+//   }
+
+//   return count >= n
+// };
+
 var canPlaceFlowers = function(flowerbed, n) {
   let count = 0
-  for (let i = 0; i < flowerbed.length; i++) {
+  for (let i = 0, len = flowerbed.length; i < len; i++) {
     if (flowerbed[i] === 0) {
-      if (!flowerbed[i - 1] && !flowerbed[i + 1]) {
-        flowerbed[i] = 1
+      if (i === 0 && !flowerbed[1]) {
         count++
+        i++
+      } else if (!flowerbed[i - 1] && !flowerbed[i + 1]) {
+        count++
+        i++
       }
     }
   }
-  if (count >= n) {
-    return true
-  }
+  return count >= n
+}
 
-  return false
-};
-
-// export default canPlaceFlowers
+export default canPlaceFlowers
 
