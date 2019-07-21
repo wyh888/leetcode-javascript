@@ -48,5 +48,5 @@ var grayCode = function(n) {
   return arr.map(item => parseInt(item, 2))
 };
 
-// export default grayCode
+export default grayCode
 
