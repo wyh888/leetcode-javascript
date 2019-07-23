@@ -11,3 +11,11 @@ test('10.regular-expression-matching:2', () => {
 test('10.regular-expression-matching:3', () => {
   expect(isMatch("mississippi", "mis*is*p*.")).toBe(false)
 })
+
+test('10.regular-expression-matching:4', () => {
+  expect(isMatch("mississippi", "mis*is*ip*.")).toBe(true)
+})
+
+test('10.regular-expression-matching:5', () => {
+  expect(isMatch("ab", ".*c")).toBe(false)
+})
