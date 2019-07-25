@@ -21,6 +21,5 @@ var maximumGap = function(nums) {
   return max
 };
 
-// maximumGap([1, 3, 100])
-// export default maximumGap
+export default maximumGap
 
