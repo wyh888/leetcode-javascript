@@ -7,34 +7,20 @@
  * @param {string} s
  * @return {string[]}
  */
-// var restoreIpAddresses = function(s) {
-//   let result = []
-
-//   // 递归处理 ip 分段
-//   let search = (cur, sub) => {
-//     // 边界条件
-//     if (cur.length === 4 && cur.join('') === s) {
-//       result.push(cur.join('.'))
-//     } else {
-//       for (let i = 0, len = Math.min(3, sub.length), tmp; i < len; i++) {
-//         tmp = sub.substr(0, i + 1)
-//         if (tmp < 256) {
-//           search(cur.concat([tmp]), sub.substr(i + 1))
-//         }
-//       }
-//     }
-//   }
-//   search([], s)
-
-//   return result
-// };
-
 var restoreIpAddresses = function(s) {
   let result = []
   handler(s, result, [], 0, 0)
   return result
 }
 
+/**
+ * 
+ * @param {string} s
+ * @param {array} result
+ * @param {string} tmp
+ * @param {number} idx
+ * @param {number} curr
+ */
 function handler(s, result, tmp, idx, curr) {
   if (curr === 4) {
     if (idx === s.length) result.push(tmp.join('.'))
@@ -51,5 +37,7 @@ function handler(s, result, tmp, idx, curr) {
     if (n === '0') break
   }
 }
+
+// restoreIpAddresses('25525511135')
 
 export default restoreIpAddresses
