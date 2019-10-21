@@ -41,7 +41,7 @@ var findSubstring = function(s, words) {
         if (hasWords[word]) {
           hasWords[word] ++
         } else {
-          hasWords = 1
+          hasWords[word] = 1
         }
         if (hasWords[word] > allWords[word]) {
           break
@@ -61,7 +61,5 @@ var findSubstring = function(s, words) {
   return result
 };
 
-findSubstring('wordgoodgoodgoodbestword', [])
-
-// export default findSubstring
+export default findSubstring
 // @lc code=end
