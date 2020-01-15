@@ -54,5 +54,5 @@ var largestRectangleArea = function(heights) {
 };
 // @lc code=end
 
-// export default largestRectangleArea
+export default largestRectangleArea
 
