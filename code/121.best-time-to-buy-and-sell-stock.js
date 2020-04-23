@@ -24,6 +24,6 @@ var maxProfit = function(prices) {
   return maxProfit
 };
 
-// export default maxProfit
+export default maxProfit
 // @lc code=end
 
