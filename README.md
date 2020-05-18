@@ -1,4 +1,4 @@
-# leetcode-javascript
+# leetcode-javascript [![Build Status](https://travis-ci.com/wyh888/leetcode-javascript.svg?branch=master)](https://travis-ci.com/wyh888/leetcode-javascript)
 
 个人使用 javascript 对 leetcode 上一些题目的解法
 
