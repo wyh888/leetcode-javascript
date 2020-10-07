@@ -4,7 +4,7 @@
   "description": "使用 javascript 解答 leetcode 上的算法题",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./test"
+    "test": "jest ./test --coverage"
   },
   "repository": {
     "type": "git",
