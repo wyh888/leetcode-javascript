@@ -5,5 +5,5 @@ test('350.两个数组的交集-ii:1', () => {
 })
 
 test('350.两个数组的交集-ii:2', () => {
-  expect(intersect([4, 9, 5], [9, 4, 9, 8, 4])).toEqual([4, 9])
+  expect(intersect([4, 9, 5], [9, 9, 8, 4, 9, 4])).toEqual([9, 4])
 })

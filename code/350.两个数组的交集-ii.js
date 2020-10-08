@@ -10,29 +10,48 @@
  * @param {number[]} nums2
  * @return {number[]}
  */
-var intersect = function(nums1, nums2) {
-  let arr1Obj = {}
-  let arr2Obj = {}
-  let result = []
+// var intersect = function(nums1, nums2) {
+//   let arr1Obj = {}
+//   let arr2Obj = {}
+//   let result = []
 
-  nums1.forEach(item => {
-    arr1Obj[item] = arr1Obj[item] ? arr1Obj[item] + 1 : 1
+//   nums1.forEach(item => {
+//     arr1Obj[item] = arr1Obj[item] ? arr1Obj[item] + 1 : 1
+//   })
+
+//   nums2.forEach((item) => {
+//     arr2Obj[item] = arr2Obj[item] ? arr2Obj[item] + 1 : 1
+//   })
+
+//   let temp = new Set(Object.keys(arr1Obj).concat(Object.keys[arr2Obj]))
+
+//   temp.forEach(item => {
+//     let num = Math.min(arr1Obj[item], arr2Obj[item])
+//     while(num --) {
+//       result.push(parseInt(item))
+//     }
+//   })
+
+//   return result
+// }
+
+var intersect = function (nums1, nums2) {
+  let arrObj = {}
+
+  nums1.forEach((item) => {
+    arrObj[item] = arrObj[item] ? arrObj[item] + 1 : 1
   })
 
+  let k = 0
   nums2.forEach((item) => {
-    arr2Obj[item] = arr2Obj[item] ? arr2Obj[item] + 1 : 1
-  })
-
-  let temp = new Set(Object.keys(arr1Obj).concat(Object.keys[arr2Obj]))
-
-  temp.forEach(item => {
-    let num = Math.min(arr1Obj[item], arr2Obj[item])
-    while(num --) {
-      result.push(parseInt(item))
+    if (arrObj[item]) {
+      arrObj[item] -= 1
+      nums2[k] = item
+      k ++
     }
   })
 
-  return result
+  return nums2.slice(0, k)
 }
 
 export default intersect
